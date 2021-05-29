@@ -7,19 +7,16 @@ import principal.Filme;
 
 public class Ator extends Pessoa {
 	
-	private List<Filme> filmes = new ArrayList<Filme>();
+	private String nacionalidade;
 
-	public Ator(String nome, List<Filme> filmes) {
+	public Ator(String nome, String nacionalidade) {
 		super(nome);
-		this.filmes = filmes;
+		this.nacionalidade = nacionalidade;
 	}
-
-	public List<Filme> getFilmes() {
-		return filmes;
-	}
-
-	public void setFilmes(Filme filme) {
-		filmes.add(filme);
+	public String getNacionalidade() {
+		return nacionalidade;
 	}
 
 }
+
+	
